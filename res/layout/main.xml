@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="TWITTER ACCOUNT"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/logo_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login" />
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="Welcome,"
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/twitterCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/twitter_check"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="  Twitter (Not connected) "
+                android:textColor="#ccc"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_sendimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text=" Send Image to Twitpic" />
+
+            <Button
+                android:id="@+id/btn_updatestatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Status" />
+
+            <Button
+                android:id="@+id/btn_timeline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Get Time Line" />
+
+            <Button
+                android:id="@+id/btn_frnd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Friend List(following)" />
+
+            <Button
+                android:id="@+id/btn_follower"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Followers List" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
